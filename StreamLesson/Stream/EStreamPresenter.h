@@ -1,0 +1,21 @@
+//
+//  EStreamPresenter.h
+//  PIXY
+//
+//  Created by gao feng on 16/4/26.
+//  Copyright © 2016年 music4kid. All rights reserved.
+//
+
+#import "CDDContext.h"
+#import "IStreamPresenter.h"
+#import "EPresenter.h"
+
+@class MSWeakTimer;
+
+@interface EStreamPresenter : EPresenter <IStreamPresenter>
+
+//for gift category
+@property (nonatomic, strong) MSWeakTimer*                      giftReceiveTimer;
+@property (nonatomic, strong) NSMutableArray*                   giftQueue;
+
+@end
